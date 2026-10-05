@@ -1,0 +1,14 @@
+{
+  "name": "siemsup-static-site",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 8000",
+    "build": "vite build && node scripts/copy-static-assets.mjs",
+    "build:pages": "npm run build && node scripts/prepare-github-pages.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 8000"
+  },
+  "devDependencies": {
+    "vite": "^7.1.12",
+    "vite-plugin-html-inject": "^1.1.2"
+  }
+}

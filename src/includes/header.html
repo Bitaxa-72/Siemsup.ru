@@ -1,0 +1,74 @@
+<header class="header">
+        <div class="header__main-bar" data-sticky-header>
+          <div class="container header__main">
+          <a class="logo" href="/" aria-label="Siemsup">
+            <span class="logo__mark"><i></i><i></i><i></i></span>
+            <span class="logo__text">SIEM<span>SUP</span></span>
+          </a>
+          <button class="header__catalog-button" type="button" data-catalog-toggle aria-controls="catalog-menu" aria-expanded="false">
+            <span class="header__catalog-icon"><i></i><i></i><i></i></span>
+            <span>Каталог</span>
+          </button>
+          <a class="header__brands" href="/manufacturers/">Бренды</a>
+          <form class="header__search" action="/search/" method="get">
+            <span class="sr-only">Поиск</span>
+            <input type="search" name="q" placeholder="Поиск по артикулу, названию или производителю">
+            <button type="submit" aria-label="Найти">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m20 20-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+            </button>
+          </form>
+          <a class="header__cart" href="/cart/" aria-label="Корзина">
+            <span>Корзина</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L20 7H6M9 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm8 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>
+            <b class="header__cart-count" data-cart-count hidden>0</b>
+          </a>
+          <button class="header__mobile-toggle" type="button" data-menu-toggle aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+          </div>
+        </div>
+        <div class="header__catalog-menu" id="catalog-menu" data-catalog-menu>
+          <div class="container header__catalog-menu-container">
+            <div class="header__catalog-heading"><p class="header__catalog-title">Каталог оборудования</p><a href="/catalog/">Все категории →</a></div>
+            <div class="header__catalog-groups">
+              <div class="header__catalog-group"><a class="header__catalog-group-title" href="/catalog/category/">Автоматизация</a><a href="/catalog/category/">Программируемые контроллеры</a><a href="/catalog/category/">Панели оператора HMI</a><a href="/catalog/category/">Модули ввода-вывода</a><a href="/catalog/category/">Промышленные сети</a></div>
+              <div class="header__catalog-group"><a class="header__catalog-group-title" href="/catalog/category/">Электротехника</a><a href="/catalog/category/">Автоматические выключатели</a><a href="/catalog/category/">Контакторы и реле</a><a href="/catalog/category/">Источники питания</a><a href="/catalog/category/">Клеммы и компоненты</a></div>
+              <div class="header__catalog-group"><a class="header__catalog-group-title" href="/catalog/category/">Приводы и двигатели</a><a href="/catalog/category/">Частотные преобразователи</a><a href="/catalog/category/">Сервоприводы</a><a href="/catalog/category/">Электродвигатели</a><a href="/catalog/category/">Устройства плавного пуска</a></div>
+              <div class="header__catalog-group"><a class="header__catalog-group-title" href="/catalog/category/">КИП и датчики</a><a href="/catalog/category/">Датчики давления</a><a href="/catalog/category/">Датчики температуры</a><a href="/catalog/category/">Измерительные приборы</a><a href="/catalog/category/">Регуляторы и контроллеры</a></div>
+              <div class="header__catalog-group"><a class="header__catalog-group-title" href="/catalog/category/">Пневматика</a><a href="/catalog/category/">Клапаны</a><a href="/catalog/category/">Пневмоцилиндры</a><a href="/catalog/category/">Подготовка воздуха</a><a href="/catalog/category/">Фитинги и трубки</a></div>
+              <div class="header__catalog-group header__catalog-group--quick"><span class="header__catalog-group-title">Быстрый переход</span><a href="/manufacturers/">Каталог брендов</a><a href="/sklad/">Оборудование в наличии</a><a href="/send/">Запросить подбор</a></div>
+            </div>
+          </div>
+        </div>
+        <nav class="header__navigation" data-menu>
+          <div class="container header__navigation-container">
+            <div class="header__navigation-primary">
+              <a class="header__mobile-only" href="/catalog/">Каталог</a>
+              <a class="header__mobile-only" href="/manufacturers/">Бренды</a>
+              <details class="header__nav-item">
+                <summary>Покупателям</summary>
+                <div class="header__nav-dropdown">
+                  <a href="/dostavka/">Доставка</a>
+                  <a href="/oplata/">Оплата</a>
+                  <a href="/garantiya/">Гарантия</a>
+                </div>
+              </details>
+              <details class="header__nav-item">
+                <summary>Компания</summary>
+                <div class="header__nav-dropdown">
+                  <a href="/about/">О нас</a>
+                  <a href="/comanda/">Команда</a>
+                  <a href="/postavshhikam/">Партнерство</a>
+                  <a href="/sert/">Сертификаты</a>
+                  <a href="/karera/">Карьера</a>
+                </div>
+              </details>
+              <a href="/blog/">Блог</a>
+              <a href="/contacts/">Контакты</a>
+            </div>
+            <div class="header__navigation-contacts">
+              <a class="header__navigation-request" href="/send/">Оставить заявку</a>
+              <a href="mailto:info@example.ru">info@example.ru</a>
+              <a class="header__navigation-phone" href="tel:+78000000000">8 800 000-00-00</a>
+            </div>
+          </div>
+        </nav>
+      </header>
