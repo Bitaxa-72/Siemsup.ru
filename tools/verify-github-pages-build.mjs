@@ -26,6 +26,10 @@ for (const path of files) {
 const home = readFileSync(join(root, 'index.html'), 'utf8');
 const pages = readFileSync(join(root, 'assets', 'js', 'pages.js'), 'utf8');
 assert.ok(home.includes('href="/Siemsup.ru/catalog/"'), 'Home must link to the catalog in GitHub Pages');
+assert.ok(home.includes('href="/Siemsup.ru/blog/"'), 'Home news block must link to the blog in GitHub Pages');
+assert.equal(existsSync(join(root, 'rekomendacii', 'index.html')), false, 'Recommendations page must not be published');
+assert.ok(existsSync(join(root, 'assets', 'images', 'social', 'max.svg')), 'Official MAX logo must be published');
+assert.match(home, /<img class="footer__max-logo" src="\/Siemsup\.ru\/(?:assets\/images\/social\/max|_vite\/max-[^"]+)\.svg"/, 'Footer must use the official MAX logo');
 assert.ok(pages.includes('`/Siemsup.ru/assets/${path}`'), 'Dynamic assets must use the GitHub Pages base path');
 
 console.log(`GitHub Pages build verified: ${files.length} files`);

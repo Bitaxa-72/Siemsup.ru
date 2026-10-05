@@ -89,7 +89,6 @@
       contacts: contactsPage,
       blog: blogPage,
       'blog-article': blogArticlePage,
-      rekomendacii: recommendationsPage,
     };
   };
 
